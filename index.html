@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Chat App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>ChatApp</h1>
+            <button id="logout">Logout</button>
+        </header>
+        <main class="chat-main">
+            <div class="chat-sidebar">
+                <h3>Room Name:</h3>
+                <h2 id="room-name">JavaScript</h2>
+                <h3>Users</h3>
+                <ul id="users">
+                    <li>User1</li>
+                    <li>User2</li>
+                    <li>User3</li>
+                </ul>
+            </div>
+            <div class="chat-messages">
+                <!-- Chat messages will appear here -->
+            </div>
+        </main>
+        <div class="chat-form-container">
+            <form id="chat-form">
+                <input id="msg" type="text" placeholder="Enter Message" required autocomplete="off">
+                <button type="submit" class="btn">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
